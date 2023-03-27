@@ -14,6 +14,7 @@ const genDomain = () => {
                     console.log(a + b + c + '.' + d);
                     document.write(a + b + c + '.' + d + "<br>");
 
+                    /* DOMAIN HACK */
                     aux = c.split("").splice(c.length - d.length, d.length).join("");
                     aux2 = c.split("").splice(0, c.length - d.length).join("");
 
@@ -21,7 +22,7 @@ const genDomain = () => {
                         console.log(a + b + aux2 + '.' + d);
                         document.write(a + b + aux2 + '.' + d + "<br>");
                     }
-
+                    /* DOMAIN HACK END */
                 });
                 console.log("\n");
                 document.write("<br>")
